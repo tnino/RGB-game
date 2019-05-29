@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/rgb.css">
+<script src="rgb.js"></script>
+</head>
+<body>
+
+<h2>Pick your player: </h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn.bulbagarden.net/upload/0/0f/Mega_Venusaur_anime.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Venusaur</h2>
+        <p class="title">Pokemon</p>
+        
+        <button onclick="myFunction1()">Play as Venusaur</button>
+
+<p id="Venusaur"></p>
+        <div class="chooseCharacter">
+  What's your name<br>
+  <input id="character_name"/><br>
+  Pick your player(player 1, player2,, player3, player 4)<br>
+  <input id="character_species"/><br>
+  <button id="start" onclick="start()">Start</button>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.fanbyte.com/wp-content/uploads/2018/12/Jigglypuff-Smash-Ultimate-Guide.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Jigglypuff</h2>
+        <p class="title">Pokemon</p>
+        
+        <button onclick="myFunction2()">Play as Jigglypuff</button>
+
+<p id="Jigglypuff"></p>
+        <div class="chooseCharacter">
+  What's your name<br>
+  <input id="character_name"/><br>
+  Pick your player(player 1, player2,, player3, player 4)<br>
+  <input id="character_species"/><br>
+  <button id="start" onclick="start()">Start</button>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://pokemongohub.net/wp-content/uploads/2016/12/togepi.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Topegi</h2>
+        <p class="title">Pokemon</p>
+        
+      
+        <button onclick="myFunction3()">Play as Topegi</button>
+
+<p id="Topegi"></p>
+        <div class="chooseCharacter">
+  What's your name<br>
+  <input id="character_name"/><br>
+  Pick your player(player 1, player2,, player3, player 4)<br>
+  <input id="character_species"/><br>
+  <button id="start" onclick="start()">Start</button>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://thingiverse-production-new.s3.amazonaws.com/assets/8b/5a/23/90/31/Salameche_LetsGo.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Charmanderr</h2>
+        <p class="title">Pokemon</p>
+        
+        <button onclick="myFunction4()">Play as Charmander</button>
+
+<p id="Charmander"></p>
+        <div class="chooseCharacter">
+  What's your name<br>
+  <input id="character_name"/><br>
+  Pick your player(player 1, player2,, player3, player 4)<br>
+  <input id="character_species"/><br>
+  <button id="start" onclick="start()">Start</button>
+</div>
+      </div>
+    
+</div>
+
+<div class="scene">
+<div class="playercard">
+  <div class="name">Name: <span class="n"></span></div>
+  <div class="species">Species: <span class="s"></span><br></div><br>
+  <div class="health">Health: <span class="h"></span><br><span class="player_health_damage"></span></div>
+  <div class="attack">Atack: <span class="a"></span><br></div>
+  <div class="defense">Defense: <span class="d"></span></div>
+</div>
+  
+  <button id="start_battle" onclick="start_battle()">START BATTLE</button>
+  
+<div class="battle"> 
+  <div class="opponent">
+    <span class="opponent_name"></span><br>
+    <div id="opponent_image"></div>
+    <span class="opponent_health"></span><br><span class="opponent_health_damage"></span>
+    <span class="opponent_attack"></span><br>
+    <span class="opponent_defense"></span>
+  </div>
+</div>
+  <button id="fight" onclick="fight()">Fight</button>
+  
+
+
+  
+</div>
+
+<div id="game_over1">
+  <div id="game_over2">
+    <h1>Game over</h1>
+    <div class="your_score"></div>
+  </div>
+</div>

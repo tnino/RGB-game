@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+body {
+    background-color: white;
+    background-image: linear-gradient(-90deg, pink, purple, pink);
+    color: white;
+    font-family: Roboto;
+    margin: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h2{
+color:black;
+background: black;
+color:white;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  color:black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<h2>Pick your player: </h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn.bulbagarden.net/upload/0/0f/Mega_Venusaur_anime.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Venusaur</h2>
+        <p class="title">Pokemon</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <button onclick="myFunction1()">Play as Venusaur</button>
+
+<p id="Venusaur"></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.fanbyte.com/wp-content/uploads/2018/12/Jigglypuff-Smash-Ultimate-Guide.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Jigglypuff</h2>
+        <p class="title">Pokemon</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <button onclick="myFunction2()">Play as Jigglypuff</button>
+
+<p id="Jigglypuff"></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://pokemongohub.net/wp-content/uploads/2016/12/togepi.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Topegi</h2>
+        <p class="title">Pokemon</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      
+        <button onclick="myFunction3()">Play as Topegi</button>
+
+<p id="Topegi"></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://thingiverse-production-new.s3.amazonaws.com/assets/8b/5a/23/90/31/Salameche_LetsGo.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Charmander</h2>
+        <p class="title">Pokemon</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <button onclick="myFunction4()">Play as Charmander</button>
+
+<p id="Charmander"></p>
+      </div>
+    
+</div>
+
+<script>
+function myFunction1() {
+  document.getElementById("Venusaur").innerHTML = "Hello World";
+}
+function myFunction2() {
+  document.getElementById("Jigglypuff").innerHTML = "Hello World";
+}
+function myFunction3() {
+  document.getElementById("Topegi").innerHTML = "Hello World";
+}
+
+function myFunction4() {
+  document.getElementById("Charmander").innerHTML = "Hello World";
+}
+
+</script>
+</body>
+</html>
